@@ -1,2 +1,2 @@
 # code-dump
-Storage for non separate repository worth code 
+Storage for code not worth a separate repository 
