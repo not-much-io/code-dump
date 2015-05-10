@@ -4,6 +4,31 @@ body {
     text-align: center;
 }
 
+.align-left {
+    float: left;
+}
+.align-right {
+    float: right;
+}
+
 #list-of-todos {
     list-style-type: none;
+}
+
+#list-of-todos li {
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#list-of-todos li button {
+    border-radius: 15px;
+}
+
+.even-todo {
+    background-color: darkgrey;
+}
+
+.odd-todo {
+    background-color: cornflowerblue;
 }
