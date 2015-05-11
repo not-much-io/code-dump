@@ -85,7 +85,7 @@ function todoFactory() {
         transitionAwayFromEdit(li);
     });
 
-    div.className = "input-field hiddendiv";
+    div.className = "input-field";
     div.appendChild(input);
     div.appendChild(label);
 
@@ -93,9 +93,10 @@ function todoFactory() {
     li.addEventListener("click", function() {
         onToDoClick(li);
     });
+
     li.appendChild(div);
-    li.appendChild(span);
     li.appendChild(a);
+    li.appendChild(span);
 
     return li;
 }

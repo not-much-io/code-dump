@@ -6,7 +6,7 @@
     <title>Material Todo</title>
 
     <!-- CSS  -->
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
@@ -14,12 +14,12 @@
 <nav class="blue-grey darken-1 z-depth-3" role="navigation">
     <div class="nav-wrapper container">
         <a id="logo-container" href="#" class="brand-logo">
-            <img src="images/logo.png" style="height: 50px; padding-top: 10px">
+            <img src="images/todo-logo.png" style="height: 50px; padding-top: 10px">
         </a>
     </div>
 </nav>
 
-<div class="section no-pad-bot" id="index-banner">
+<div class="section no-pad-bot">
 
     <a id="add-button" class="btn-floating btn-large waves-effect waves-light red z-depth-3"
        onclick="onActionButtonClick()">
@@ -40,9 +40,9 @@
                         <label class="active" for="todo-enter">ToDo..</label>
                     </div>
 
-                    <span class="content">Take Mia for a walk!</span>
+                    <span class="content">Take dog for a walk!</span>
 
-                    <a href="#!" class="secondary-content remove-button" onclick="removeToDo(this.parentNode)">
+                    <a class="secondary-content remove-button" onclick="removeToDo(this.parentNode)">
                         <i class="mdi-action-delete"></i>
                     </a>
 
@@ -61,8 +61,7 @@
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/scripts.js"></script>
-<script src="js/materialize.js"></script>
-<script src="js/init.js"></script>
+<script src="materialize/js/materialize.js"></script>
 
 </body>
 </html>

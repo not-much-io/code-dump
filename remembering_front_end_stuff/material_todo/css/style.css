@@ -24,19 +24,3 @@ nav {
     right: 20px;
     z-index: 2;
 }
-
-#input-card {
-    z-index: 2;
-    position: fixed;
-    bottom: 100px;
-    right: 20px;
-    height: 200px;
-    width: 200px;
-}
-
-#todo-enter-div {
-    /*position: fixed;*/
-    /*bottom: 90px;*/
-    /*/!*right: -250px;*!/*/
-    /*z-index: 2;*/
-}
