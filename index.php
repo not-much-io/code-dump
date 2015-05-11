@@ -1,1 +1,1 @@
-<?php include_once("remembering_front_end_stuff/home.html"); ?>
+<?php include_once("home.html"); ?>
