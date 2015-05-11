@@ -7,7 +7,7 @@ body {
 .square {
     height: 200px;
     width: 200px;
-    background-color: beige;
+    background-color: red;
     position: absolute;
     left: 0;
     top: 100px;

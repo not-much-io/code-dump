@@ -40,10 +40,10 @@ window.onload = function () {
 function changeColor() {
     var square = document.getElementById("divididiv");
     console.log(square.style.backgroundColor);
-    if (square.style.backgroundColor == "rgb(245, 245, 220)") {
-        square.style.backgroundColor = "black";
+    if (square.style.backgroundColor == "rgb(255, 0, 0)") {
+        square.style.backgroundColor = "#000000";
     } else {
-        square.style.backgroundColor = "beige";
+        square.style.backgroundColor = "#FF0000";
     }
 }
 
