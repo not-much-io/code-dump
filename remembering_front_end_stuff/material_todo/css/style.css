@@ -17,10 +17,3 @@ nav {
 #todo-list {
     z-index: 1;
 }
-
-#add-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 2;
-}

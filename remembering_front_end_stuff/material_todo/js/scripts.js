@@ -35,6 +35,7 @@ function transitionToEdit(todoLi) {
     removeButton.className += " hiddendiv";
 
     inputField.getElementsByClassName("inp")[0].focus();
+    document.getElementById("add-button").className = "btn-floating btn-large waves-effect waves-light red z-depth-3 hiddendiv";
 }
 
 function transitionAwayFromEdit(todoLi) {
@@ -51,6 +52,7 @@ function transitionAwayFromEdit(todoLi) {
     if (content.innerHTML == "") {
         removeToDo(todoLi);
     }
+    document.getElementById("add-button").className = "btn-floating btn-large waves-effect waves-light red z-depth-3";
 }
 
 function todoFactory() {
