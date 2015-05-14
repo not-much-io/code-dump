@@ -8,6 +8,18 @@ window.onload = function() {
         if (code == 13 && document.activeElement.className == "validate") {
             transitionAwayFromEdit(document.activeElement.parentNode.parentNode.parentNode);
         }
+    };
+
+    var list = document.getElementById("alan-list");
+
+    var notToDos = ["Take Mia for a walk", "Play with Mia", "Do Homework", "Write code"];
+
+    for (var i = 0; i < 4; i++) {
+        var newNotToDo = notToDoFactory();
+        console.log(notToDos[i]);
+        newNotToDo.getElementsByTagName("span")[0].innerHTML = notToDos[i];
+        newNotToDo.getElementsByTagName("input")[0].value = notToDos[i];
+        list.appendChild(newNotToDo);
     }
 };
 
@@ -34,7 +46,7 @@ function notToDoFactory() {
     var i = document.createElement("i");
     i.className ="mdi-action-delete";
     var span = document.createElement("span");
-    span.innerHTML = "Alvin";
+    //span.innerHTML = "Alvin";
     var hidDiv = document.createElement("div");
     hidDiv.className = "hiddendiv edit-content";
     var hidDivInner = document.createElement("div");
