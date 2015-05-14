@@ -1,5 +1,5 @@
 /**
- * Created by kristo on 5/14/15.
+ * Created by marta on 5/14/15.
  */
 
 window.onload = function() {
