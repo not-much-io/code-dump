@@ -12,7 +12,7 @@ window.onload = function() {
 
     var list = document.getElementById("alan-list");
 
-    var notToDos = ["Take Mia for a walk", "Play with Mia", "Do Homework", "Write code"];
+    var notToDos = ["Forget to take Mia for a walk", "Forget to Play with Mia", "Procrastinate", "Push that button"];
 
     for (var i = 0; i < 4; i++) {
         var newNotToDo = notToDoFactory();
