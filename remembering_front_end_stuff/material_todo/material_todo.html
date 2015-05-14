@@ -11,54 +11,54 @@
 </head>
 <body>
 
-<nav class="blue-grey darken-1 z-depth-3" role="navigation">
-    <div class="nav-wrapper container">
-        <a id="logo-container" href="#" class="brand-logo">
-            <img src="images/todo-logo.png" style="height: 50px; padding-top: 10px">
-        </a>
-    </div>
-</nav>
+    <nav class="blue-grey darken-1 z-depth-3" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo">
+                <img src="images/todo-logo.png" style="height: 50px; padding-top: 10px">
+            </a>
+        </div>
+    </nav>
 
-<div class="section no-pad-bot">
+    <div class="section no-pad-bot">
 
-    <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-        <a id="add-button" class="btn-floating btn-large waves-effect waves-light red z-depth-3"
-           onclick="onActionButtonClick()">
-            <i id="add-button-image" class="mdi-content-add"></i>
-        </a>
-    </div>
+        <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+            <a id="add-button" class="btn-floating btn-large waves-effect waves-light red z-depth-3"
+               onclick="onActionButtonClick()">
+                <i id="add-button-image" class="mdi-content-add"></i>
+            </a>
+        </div>
 
-    <div class="container">
+        <div class="container">
 
-        <div class="section">
+            <div class="section">
 
-            <ul id="todo-list" class="collection with-header z-depth-2">
-                <li class="collection-header"><h5>ToDo</h5></li>
+                <ul id="todo-list" class="collection with-header z-depth-2">
+                    <li class="collection-header"><h5>ToDo</h5></li>
 
-                <li class="collection-item dismissable" onclick="onToDoClick(this)">
+                    <li class="collection-item dismissable" onclick="onToDoClick(this)">
 
-                    <div class="input-field hiddendiv">
-                        <input id="todo-enter" type="text" class="inp" onblur="transitionAwayFromEdit(this.parentNode.parentNode)">
-                        <label class="active" for="todo-enter">ToDo..</label>
-                    </div>
+                        <div class="input-field hiddendiv">
+                            <input id="todo-enter" type="text" class="inp" onblur="transitionAwayFromEdit(this.parentNode.parentNode)">
+                            <label class="active" for="todo-enter">ToDo..</label>
+                        </div>
 
-                    <span class="content">Take dog for a walk!</span>
+                        <span class="content">Take dog for a walk!</span>
 
-                    <a class="secondary-content remove-button" onclick="removeToDo(this.parentNode)">
-                        <i class="mdi-action-delete"></i>
-                    </a>
+                        <a class="secondary-content remove-button" onclick="removeToDo(this.parentNode)">
+                            <i class="mdi-action-delete"></i>
+                        </a>
 
-                </li>
+                    </li>
 
-            </ul>
+                </ul>
+
+            </div>
+
+            <br><br>
 
         </div>
 
-        <br><br>
-
     </div>
-
-</div>
 
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

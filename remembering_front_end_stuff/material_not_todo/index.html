@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>Materialize Not ToDo</title>
+
+    <!-- CSS  -->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+<nav class="blue-grey lighten-1 z-depth-3" role="navigation">
+
+    <div class="nav-wrapper container">
+
+        <a id="logo-container" href="" class="brand-logo">
+            <img src="images/todo-logo.png" style="height:50px; padding-top: 10px">
+        </a>
+
+    </div>
+
+</nav>
+
+<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+    <a id="action-button" class="btn-floating btn-large red z-depth-3" onclick="onActionButtonClick()">
+        <i class="large mdi-content-add"></i>
+    </a>
+
+</div>
+
+<div class="section">
+
+<div class="container">
+    <div class="section">
+
+    <ul id="alan-list" class="collection with-header z-depth-2">
+
+        <li class="collection-header">
+            <h3>Not ToDo</h3>
+        </li>
+
+    </ul>
+
+    </div>
+ </div>
+
+</div>
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>

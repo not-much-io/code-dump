@@ -12,27 +12,69 @@
 </head>
 <body>
 
-    <nav class="grey darken-4" role="navigation">
+    <nav class="grey darken-4 z-depth-1" role="navigation">
         <div class="nav-wrapper container">
 
             <a id="logo-container" href="#" class="brand-logo">
                 <img src="images/logo.png" style="height: 50px; padding-top: 10px">
             </a>
 
-            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="#">Navbar Link</a>
+                </li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+                <li>
+                    <a href="#">
+                        <i class="mdi-av-volume-mute"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <a href="#" data-activates="nav-mobile" class="button-collapse">
+                <i class="mdi-navigation-menu"></i>
+            </a>
+
         </div>
     </nav>
 
-    <div id="time-div" class="section no-pad-bot">
-        <div class="container">
-            <br><br>
-            <!--mdi-image-timer mdi-image-timer-off-->
+    <div class="fixed-action-btn" style="top: 32%; right: 24px;">
+        <a class="btn-floating btn-large waves-effect waves-light red z-depth-3">
+            <i class="large mdi-av-play-arrow"></i>
+        </a>
+    </div>
 
-            <h1 class="header center red-text">00:00</h1>
-            <div class="row center">
-                <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
-            </div>
-            <br><br>
+    <div id="top-section" class="section z-depth-2" style="background-color: #303030; height: 30%">
+        <div class="container">
+            <h2 class="white-text">
+                <i class="mdi-image-timer small"></i>
+                01:49
+            </h2>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <form action="#">
+                <p class="range-field">
+                    <label for="long-rest-time">Work time (45 min)</label>
+                    <input type="range" id="long-rest-time" min="0" max="120" />
+                </p>
+                <p class="range-field">
+                    <label for="active-time">Break Time (5 min)</label>
+                    <input type="range" id="active-time" min="1" max="120" />
+                </p>
+                <p class="range-field">
+                    <label for="short-rest-time">Long Break rest (15 min)</label>
+                    <input type="range" id="short-rest-time" min="1" max="60" />
+                </p>
+                <p class="range-field">
+                    <label for="before-long-rest">Session before long rest (4)</label>
+                    <input type="range" id="before-long-rest" min="0" max="10" />
+                </p>
+            </form>
 
         </div>
     </div>
